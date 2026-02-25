@@ -1,0 +1,28 @@
+/* Custom progress bar and category color classes for wow-level UI */
+
+.progress-bar {
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 9999px;
+  min-width: 0;
+  max-width: 100%;
+  height: 0.75rem;
+  background: linear-gradient(90deg, #6366f1 0%, #a21caf 100%);
+  box-shadow: 0 2px 8px 0 rgba(99,102,241,0.15);
+  width: var(--progress-width, 0%);
+}
+
+.progress-bar-success {
+  background: linear-gradient(90deg, #22c55e 0%, #16a34a 100%);
+}
+.progress-bar-warning {
+  background: linear-gradient(90deg, #fbbf24 0%, #f59e42 100%);
+}
+.progress-bar-danger {
+  background: linear-gradient(90deg, #ef4444 0%, #b91c1c 100%);
+}
+
+.category-avatar {
+  box-shadow: 0 2px 8px 0 rgba(99,102,241,0.10);
+  border-radius: 0.75rem;
+  background-color: var(--category-bg, #f3f4f6);
+}
